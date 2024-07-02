@@ -1,0 +1,22 @@
+export const allWords = [
+    "Accordion", "Avocado Toast", "Backpack", "Banana Split", "Bicycle Pump",
+    "Birdhouse", "Blender", "Bowtie", "Bubble Wrap", "Cactus", "Candlestick",
+    "Cappuccino", "Cathedral", "Chalkboard", "Cheesecake", "Chessboard", 
+    "Corkscrew", "Cotton Candy", "Crossword Puzzle", "Curtains", "Dandelion",
+    "Door Handle", "Dreamcatcher", "Easel", "Electric Kettle", "Fairy Lights",
+    "Ferris Wheel", "Fountain Pen", "Giraffe", "Goggles", "Grand Piano", 
+    "Greenhouse", "Hamburger", "Handheld Fan", "Honeycomb", "Hot Air Balloon",
+    "Ice Cream Truck", "Jellyfish", "Kangaroo", "Kite", "Lighthouse",
+    "Lollipop", "Magnifying Glass", "Marathon", "Marshmallow", "Merry-Go-Round",
+    "Moonwalk", "Mushroom", "Neon Sign", "Nutcracker", "Origami Crane",
+    "Ostrich", "Pancake", "Parachute", "Pencil Sharpener", "Pepper Shaker",
+    "Petting Zoo", "Pharaoh", "Pickle Jar", "Pineapple", "Pocket Watch",
+    "Popsicle", "Porthole", "Postcard", "Quicksand", "Record Player",
+    "Redwood Tree", "Refrigerator Magnet", "Roller Coaster", "Rubber Duck",
+    "Sailboat", "Salt Lamp", "Sandcastle", "Saturn", "Scooter",
+    "Skateboard", "Snow Globe", "Spaceship", "Sphinx", "Squeegee",
+    "Starfish", "Stethoscope", "Sunflower", "Surfboard", "Swiss Army Knife",
+    "Teapot", "Terrarium", "Tire Swing", "Tornado", "Train Station",
+    "Trampoline", "Treasure Chest", "Trombone", "Umbrella", "Unicycle",
+    "Velociraptor", "Vending Machine", "Viking Ship", "Walkie Talkie", "Waterfall"
+  ]

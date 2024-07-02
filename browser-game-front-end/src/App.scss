@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; // Added to include padding and border in element's total width and height
+}
+
+// Media queries for responsive font sizes
+html {
+  font-size: 16px; // Default base font size
+
+  @media (min-width: 320px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 22px;
+  }
+
+  @media (min-width: 1400px) {
+    font-size: 24px;
+  }
+}
+
+// Define font size variables
+:root {
+  --text-smaller: 0.6rem;
+  --text-small: 0.8rem;
+  --text-medium: 1rem;
+  --text-large: 1.2rem;
+  --text-larger: 1.8rem;
+}
+
+$basic-padding: 1rem;
+$main-content-max-width: 960px;
+$rounded-border-radius: 0.3rem;
+$button-padding: 0.3rem 0.4rem;
+
+$header-font: "Baloo Bhaijaan 2", sans-serif;
+$header-font-alternative: "Chewy", system-ui;
+$paragraph-font: "Quicksand", sans-serif;
+
+$prime-color-dark: #24282F;
+$prime-color-light: #96CEC5;
+$prime-color-light-hover: #abe8dd;
+$color-black: #7A7A7A;
+$color-mid: #38414A;
+$color-light-black: #7a7a7ac1;
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 1.8rem;
+}
+
+header {
+  padding: 0 $basic-padding $basic-padding $basic-padding;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $prime-color-dark;
+  width: 100%;
+  font-family: $header-font;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: var(--text-larger);
+  user-select: none;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: $prime-color-dark;
+}
+
+#content-main {
+  width: 100%;
+  padding: 0 $basic-padding;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: $basic-padding / 2;
+  flex: 1;
+
+  @media (min-width: 768px) {
+    max-width: $main-content-max-width;
+    margin: 0 auto;
+    padding: 0 $basic-padding;
+  }
+}
+
+input {
+  width: 6rem;
+  font-family: $paragraph-font;
+  text-align: center;
+  height: 1.2rem;
+  border-radius: $rounded-border-radius;
+  border: 1px solid $color-black;
+  font-size: 0.5rem;
+  color: $prime-color-dark;
+  font-weight: 500;
+}
+
+p {
+  font-size: 0.7rem;
+  font-family: $paragraph-font;
+  color: white;
+}
+
+#room-id-input-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+}
+
+button {
+  width: fit-content;
+  font-family: $paragraph-font;
+  text-align: center;
+  height: fit-content;
+  border-radius: $rounded-border-radius;
+  border: none;
+  font-size: 0.5rem;
+  font-weight: 600;
+  background-color: $prime-color-light;
+  user-select: none;
+  padding: $button-padding;
+  &:hover {
+    background-color: $prime-color-light-hover;
+    cursor: pointer;
+  }
+}
+
+#teams-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-mid;
+  padding: $basic-padding / 2 $basic-padding;
+  border-radius: 0.6rem;
+  h3 {
+    font-family: $paragraph-font;
+    color: white;
+    font-size: 0.6rem;
+  }
+
+  li {
+    list-style: none;
+    color: white;
+    font-family: $paragraph-font;
+    font-size: 0.5rem;
+    padding: 0.1rem 0;
+    font-weight: 100;
+    user-select: none;
+  }
+}
+
+h2 {
+  color: white;
+  font-family: $paragraph-font;
+  font-size: 0.8rem;
+}
+
+h3 {
+  color: white;
+  font-family: $paragraph-font;
+  font-size: 0.8rem;
+}
+
+#number-of-rounds-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+}
+
+.score-label {
+  color: $color-black;
+  font-size: 0.7rem;
+}
+
+.error-message {
+  color: $color-light-black;
+  font-size: 0.5rem;
+}
+
+.describer-label-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.waiting-message {
+  color: $color-black;
+  font-size: 0.6rem;
+  padding-bottom: 0.2rem;
+  user-select: none;
+}
+
+.timer {
+  color: white;
+  font-size: 0.8rem;
+}
+
+#move-team-buttons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+}
+
+#room-id-label {
+  font-family: $paragraph-font;
+  font-size: 0.8rem;
+}
+
+.team-label-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+.score-label {
+  color: white;
+  align-content: center;
+}
+
+.team-label {
+  padding: 0rem;
+  user-select: none;
+}
+
+.clipboard-alert {
+  font-size: 0.5rem;
+  font-family: $paragraph-font;
+  font-weight: 600;
+  background-color: $prime-color-light;
+}
+
+#room-code-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.error-notification {
+  font-size: 0.6rem;
+}
+
+#describer-buttons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+#describer-buttons-container button {
+  font-size: 0.8rem;
+}

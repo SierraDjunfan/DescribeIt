@@ -1,0 +1,29 @@
+{
+  "name": "my-game-backend",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "start:frontend": "npm start --prefix ../browser-game-front-end",
+    "dev": "concurrently \"npm run start\" \"npm run start:frontend\""
+  },
+  "dependencies": {
+    "@types/uuid": "^9.0.8",
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "socket.io": "^4.7.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.8",
+    "@types/node": "^14.14.6",
+    "@types/ws": "^8.5.10",
+    "concurrently": "^5.3.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^5.4.5"
+  }
+}
